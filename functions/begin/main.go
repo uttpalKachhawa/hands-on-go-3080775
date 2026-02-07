@@ -1,26 +1,41 @@
 // functions/begin/main.go
 package main
 
+import (
+	"fmt"
+	"strconv"
+)
+
 // simple greet function
 //
+func greet() string {
+	return "Hello Uttpal!"
+}
 
 // greetWithName returns a greeting with the name
-//
+func greetWithName(name string) string {
+	return "Hello " + name + "!"
+}
 
 // greetWithName returns a greeting with the name and age of the person
-//
-
+func greetWithNameAndAge(name string, age int) (greeting string) {
+	greeting= "Hello, my name is " + name + " and I am " + strconv.Itoa(age) + " years old."
+	return greeting
+}
 // divide divides two numbers and returns the result
 // if the second number is zero, it returns  error
-//
-
+func divide(a,b int) (int, error) {
+	
+}
 func main() {
 	// invoke greet function
-	// fmt.Println(greet())
+	 fmt.Println(greet())
 
 	// invoke greetWithName function
-	// fmt.Println(greetWithName("Toni"))
+	 fmt.Println(greetWithName("Tony"))
 
+	 // invoke greetWithNameAndAge function
+	 fmt.Println(greetWithNameAndAge("Tony", 30))
 	// invoke divide function
 	// fmt.Println(divide(10, 2))
 
