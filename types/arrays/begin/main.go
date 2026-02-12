@@ -1,13 +1,21 @@
 // types/arrays/begin/main.go
 package main
 
+import "fmt"
+
 func main() {
 	// declare an array of integers
-
+	var a[3] int
 	// print the array
+	fmt.Println(a)
 
 	// set the first element to 1
-
+	a[0] = 1
+	// set the second element to 2
+	a[1] = 2
+	// set the third element to 3
+	a[2] = 3
 	// print the array
+	fmt.Println(a)
 
 }

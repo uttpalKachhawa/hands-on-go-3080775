@@ -7,7 +7,7 @@ type author struct {
 
 func main() {
 	// declare a map of string keys and author values
-	//
+	var authors map[string]author	
 
 	// initialize the map with make
 	//
