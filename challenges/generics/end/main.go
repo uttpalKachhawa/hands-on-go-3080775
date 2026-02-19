@@ -11,7 +11,6 @@ import (
 // generic print function
 func print[T any](v T) { fmt.Println(v) }
 
-// Part 2 sum function refactoring
 
 // numeric interface with a type set
 type numeric interface {
